@@ -1,0 +1,20 @@
+footer {
+    background-color: black;
+    color: white;
+    border-radius: 20px 20px 0 0;
+    padding: 2rem 5% 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer a{
+    color: white;
+}
+
+@media (max-width:900px){
+    footer{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}

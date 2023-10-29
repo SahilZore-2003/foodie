@@ -1,0 +1,48 @@
+#hero-section{
+    min-height: calc(100vh - 73.67px);
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.content{
+    text-transform: capitalize;
+    width: 45%;
+    color: white;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+
+button{
+    background-color: #c47456;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s linear;
+}
+
+button:hover{
+    background-color: white;
+    border: 2px solid #c47456;
+    color: #c47456;
+}
+
+/* responsiveness  */
+
+@media(max-width:900px){
+    #hero-section .content{
+        width: 90%;
+    }
+}
+
+@media(max-width:600px){
+    #hero-section .content{
+       top: 5%;
+    }
+}

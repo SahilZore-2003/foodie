@@ -1,0 +1,123 @@
+h1 i{
+    margin-right: .5rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5%;
+    padding-block: 1rem;
+    background-color: white;
+    color: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.16);
+}
+
+.links{
+    display: flex;
+    align-items: center;
+}
+
+.links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    margin-inline: 15px;
+    transition: .1s linear;
+}
+
+.links button{
+    background-color: white;
+    border: 2px solid #c47456;
+    border-radius: 20px;
+    color: black;
+    padding: 5px 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.links button:hover{
+    background-color: #c47456;
+    color: white;
+}
+
+.links a:hover{
+    color: #c47456;
+}
+
+.links a i{
+    padding-left: 10px;
+}
+
+.downmenu{
+    position: relative;
+}
+
+.downmenu:hover .otherlinks{
+    display: inline-block;
+}
+
+.downmenu .otherlinks{
+    position: absolute;
+    left: -20%;
+    top: 100%;
+    z-index: 100;
+    display: none;
+    background-color: white;
+    color: black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 0 0 10px 10px;
+}
+
+.otherlinks a{
+    display: block;
+    padding-block: 5px;
+}
+
+#navicon{
+    display: none;
+}
+
+/* responsivness css  */
+
+@media(max-width:800px){
+    
+
+    #navicon{
+        display: inline-block;
+    }
+
+    .links{
+        position: absolute;
+        transition: .3s linear;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        gap: 10px;
+        z-index: -1;
+        padding-bottom: 20px;
+    }
+
+    .active{
+        left: 0%;
+    }
+
+    .downmenu{
+        display: none;
+    }
+
+    .links a{
+        font-size: 20px;
+    }
+    
+}

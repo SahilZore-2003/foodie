@@ -1,0 +1,46 @@
+[
+    {
+        "id":1,
+        "name":"Chicken Fry",
+        "rating":"5",
+        "price":500
+    },
+    {
+        "id":2,
+        "name":"Fish Fry",
+        "rating":"5",
+        "price":500
+
+    },
+    {
+        "id":3,
+        "name":"Italian Pasta",
+        "rating":"5",
+        "price":500
+
+    },
+    {
+        "id":4,
+        "name":"Paneer Tikka",
+        "rating":"3",
+        "price":500
+
+    },
+    {
+        "id":5,
+        "name":"Fried Rice",
+        "rating":"4",
+        "price":500
+
+    },
+    {
+        "id":6,
+        "name":"Chicken Gravy",
+        "rating":"4",
+        "price":500
+
+    }
+]
+
+
+

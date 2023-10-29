@@ -1,0 +1,58 @@
+section{
+    padding: 3rem 5% 5rem;
+}
+
+section .main-heading{
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    font-weight: 500;
+}
+
+.dish-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+}
+
+.dish-content{
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dish-container img{
+    border-radius: 10px;
+}
+
+.price h2{
+    padding-top: 10px;
+}
+
+.rating-div i{
+    font-size: 15px;
+    margin-block: 5px;
+}
+
+.rating-div .rated{
+    color: goldenrod;
+}
+
+@media(max-width:900px){
+    .dish-container{
+        flex-direction: column;
+    }
+    .dish-content{
+        width: 90%;
+        max-width: 500px;
+    }
+}
